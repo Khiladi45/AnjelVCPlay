@@ -37,29 +37,6 @@ from pyrogram.types import (
 
 
 
-
-@Client.on_message(
-    filters.group
-    & filters.command(
-        ["start", "help", f"start@{BOT_USERNAME}", f"help@{BOT_USERNAME}"]
-    )
-)
-async def start(_, message: Message):
-    chat_id = message.chat.id
-    out = start_pannel()
-    await message.reply_text(
-        f"""
-ᴛʜᴀɴᴋs ғᴏʀ ᴘᴜᴛᴛɪɴɢ ᴍᴇ ɪɴ {message.chat.title}.
-ᴍᴜsɪᴄ ɪs ᴀʟɪᴠᴇ.
-
-ғᴏʀ ʜᴇʟᴘ ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ.
-""",
-        reply_markup=InlineKeyboardMarkup(out[1]),
-        disable_web_page_preview=True
-    )
-    return
-
-
 @Client.on_message(filters.private & filters.incoming & filters.command("start"))
 async def play(_, message: Message):
     if len(message.command) == 1:
