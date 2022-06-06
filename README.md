@@ -1,7 +1,7 @@
 <h2 align="centre">ғʟᴀᴍᴇ ᴍᴜsɪᴄ</h2>
 
 <p align="center">
-  <img src="https://telegra.ph/file/0a290f9369e33cf506894.jpg">
+  <img src="https://telegra.ph/file/580eaeb8756fe07cbbe0b.jpg">
 </p>
 
 <h3>Requirements 📝</h3>
